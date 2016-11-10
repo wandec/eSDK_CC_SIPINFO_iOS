@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ProductName</key>
+	<string>CC-API-iOS
+eSDK-mCC-API-iOS
+CC-API-iOS
+CC-API-iOS
+CC-API-iOS
+CC-API-iOS
+CC-API-iOS
+CC-API-iOS
+CC-API-iOS
+</string>
+	<key>SendPeriod</key>
+	<string>0</string>
+	<key>URL</key>
+	<string>/esdkom/log/upload</string>
+	<key>Server</key>
+	<string>esdk-log.huawei.com:9086</string>
+	<key>LogLevel_Run</key>
+	<string>0</string>
+	<key>LogLevel_Operation</key>
+	<string>0</string>
+	<key>LogLevel_Interface</key>
+	<string>1</string>
+	<key>LogNum_Run</key>
+	<string>10</string>
+	<key>LogNum_Operation</key>
+	<string>10</string>
+	<key>LogNum_Interface</key>
+	<string>10</string>
+	<key>LogSize_Run</key>
+	<string>10240</string>
+	<key>LogSize_Operation</key>
+	<string>10240</string>
+	<key>LogSize_Interface</key>
+	<string>10240</string>
+</dict>
+</plist>

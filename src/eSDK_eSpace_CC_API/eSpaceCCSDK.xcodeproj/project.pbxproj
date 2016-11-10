@@ -1,0 +1,680 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		67143B561DD31E1F0028B803 /* openssl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67143B521DD31E1F0028B803 /* openssl.framework */; };
+		67143B571DD31E1F0028B803 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 67143B551DD31E1F0028B803 /* Reachability.m */; };
+		F01CD3DB1C3E3829000A9478 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F01CD3D61C3E3829000A9478 /* libcrypto.a */; };
+		F01CD3DC1C3E3829000A9478 /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F01CD3D71C3E3829000A9478 /* libcurl.a */; };
+		F01CD3DD1C3E3829000A9478 /* libjsoncpp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F01CD3D81C3E3829000A9478 /* libjsoncpp.a */; };
+		F01CD3DE1C3E3829000A9478 /* libsecurec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F01CD3D91C3E3829000A9478 /* libsecurec.a */; };
+		F01CD3DF1C3E3829000A9478 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F01CD3DA1C3E3829000A9478 /* libssl.a */; };
+		F08423F51C05899E008793E6 /* SIPDiaglogInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F08423F41C05899E008793E6 /* SIPDiaglogInfo.m */; };
+		F0AD1CB61BE855E900D30849 /* eSpaceCCSDK.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F0AD1CB51BE855E900D30849 /* eSpaceCCSDK.h */; };
+		F0AD1CB81BE855E900D30849 /* eSpaceCCSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = F0AD1CB71BE855E900D30849 /* eSpaceCCSDK.m */; };
+		F0AD1E091BF0429D00D30849 /* libeSDKIOSLog.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0AD1DDB1BF0429C00D30849 /* libeSDKIOSLog.a */; };
+		F0AD1E0A1BF0429D00D30849 /* libhme-audio.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0AD1DE81BF0429C00D30849 /* libhme-audio.a */; };
+		F0AD1E0B1BF0429D00D30849 /* libHME-Video.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0AD1DE91BF0429C00D30849 /* libHME-Video.a */; };
+		F0AD1E0D1BF0429D00D30849 /* libHW_MPT_IOS_AMR_LIB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0AD1DEB1BF0429C00D30849 /* libHW_MPT_IOS_AMR_LIB.a */; };
+		F0AD1E0E1BF0429D00D30849 /* libHW_MPT_IOS_AMRWB_LIB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0AD1DEC1BF0429C00D30849 /* libHW_MPT_IOS_AMRWB_LIB.a */; };
+		F0AD1E0F1BF0429D00D30849 /* libHW_MPT_IOS_G722_LIB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0AD1DED1BF0429C00D30849 /* libHW_MPT_IOS_G722_LIB.a */; };
+		F0AD1E101BF0429D00D30849 /* libHW_MPT_IOS_G729AB_LIB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0AD1DEE1BF0429C00D30849 /* libHW_MPT_IOS_G729AB_LIB.a */; };
+		F0AD1E111BF0429D00D30849 /* libHW_MPT_IOS_ILBC_LIB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0AD1DEF1BF0429C00D30849 /* libHW_MPT_IOS_ILBC_LIB.a */; };
+		F0AD1E121BF0429D00D30849 /* libHW_MPT_IOS_OPUS_LIB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0AD1DF01BF0429C00D30849 /* libHW_MPT_IOS_OPUS_LIB.a */; };
+		F0AD1E131BF0429D00D30849 /* libipsi_crypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0AD1DF11BF0429C00D30849 /* libipsi_crypto.a */; };
+		F0AD1E141BF0429D00D30849 /* libipsi_eap.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0AD1DF21BF0429C00D30849 /* libipsi_eap.a */; };
+		F0AD1E151BF0429D00D30849 /* libipsi_osal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0AD1DF31BF0429C00D30849 /* libipsi_osal.a */; };
+		F0AD1E161BF0429D00D30849 /* libipsi_pse.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0AD1DF41BF0429C00D30849 /* libipsi_pse.a */; };
+		F0AD1E171BF0429D00D30849 /* libipsi_ssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0AD1DF51BF0429C00D30849 /* libipsi_ssl.a */; };
+		F0AD1E181BF0429D00D30849 /* libsipstacktup.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0AD1DF61BF0429C00D30849 /* libsipstacktup.a */; };
+		F0AD1E191BF0429D00D30849 /* libsrtp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0AD1DF71BF0429C00D30849 /* libsrtp.a */; };
+		F0AD1E1A1BF0429D00D30849 /* libtup_commonlib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0AD1DF81BF0429C00D30849 /* libtup_commonlib.a */; };
+		F0AD1E1B1BF0429D00D30849 /* libtup_dns.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0AD1DF91BF0429C00D30849 /* libtup_dns.a */; };
+		F0AD1E1C1BF0429D00D30849 /* libtup_httpofflinefile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0AD1DFA1BF0429C00D30849 /* libtup_httpofflinefile.a */; };
+		F0AD1E1D1BF0429D00D30849 /* libtup_httptrans.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0AD1DFB1BF0429C00D30849 /* libtup_httptrans.a */; };
+		F0AD1E1E1BF0429D00D30849 /* libtup_logone.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0AD1DFC1BF0429C00D30849 /* libtup_logone.a */; };
+		F0AD1E1F1BF0429D00D30849 /* libtup_msg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0AD1DFD1BF0429C00D30849 /* libtup_msg.a */; };
+		F0AD1E201BF0429D00D30849 /* libtup_os_adapter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0AD1DFE1BF0429C00D30849 /* libtup_os_adapter.a */; };
+		F0AD1E211BF0429D00D30849 /* libtup_publiclib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0AD1DFF1BF0429C00D30849 /* libtup_publiclib.a */; };
+		F0AD1E231BF0429D00D30849 /* libtup_xml.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0AD1E011BF0429C00D30849 /* libtup_xml.a */; };
+		F0AD1E241BF0429D00D30849 /* libtupcallservice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0AD1E021BF0429C00D30849 /* libtupcallservice.a */; };
+		F0AD1E251BF0429D00D30849 /* libtupmediahme.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0AD1E031BF0429C00D30849 /* libtupmediahme.a */; };
+		F0AD1E261BF0429D00D30849 /* libtupmediaservice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0AD1E041BF0429C00D30849 /* libtupmediaservice.a */; };
+		F0AD1E271BF0429D00D30849 /* libtupsdp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0AD1E051BF0429C00D30849 /* libtupsdp.a */; };
+		F0AD1E281BF0429D00D30849 /* libtupsdpnegotiation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0AD1E061BF0429C00D30849 /* libtupsdpnegotiation.a */; };
+		F0AD1E291BF0429D00D30849 /* libtupsipc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0AD1E071BF0429C00D30849 /* libtupsipc.a */; };
+		F0AD1E2A1BF0429D00D30849 /* libvcom.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0AD1E081BF0429C00D30849 /* libvcom.a */; };
+		F0AD1E3C1BF09C3000D30849 /* AnonymousCall.m in Sources */ = {isa = PBXBuildFile; fileRef = F0AD1E331BF09C3000D30849 /* AnonymousCall.m */; };
+		F0AD1E3D1BF09C3000D30849 /* CallServiceImp.mm in Sources */ = {isa = PBXBuildFile; fileRef = F0AD1E351BF09C3000D30849 /* CallServiceImp.mm */; };
+		F0AD1E3E1BF09C3000D30849 /* CallServiceManger.mm in Sources */ = {isa = PBXBuildFile; fileRef = F0AD1E371BF09C3000D30849 /* CallServiceManger.mm */; };
+		F0AD1E3F1BF09C3000D30849 /* ECSCallService.m in Sources */ = {isa = PBXBuildFile; fileRef = F0AD1E391BF09C3000D30849 /* ECSCallService.m */; };
+		F0AD1E401BF09C3000D30849 /* TupCallNotifications.mm in Sources */ = {isa = PBXBuildFile; fileRef = F0AD1E3B1BF09C3000D30849 /* TupCallNotifications.mm */; };
+		F0AD1E4E1BF09C3700D30849 /* AccountInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F0AD1E431BF09C3700D30849 /* AccountInfo.m */; };
+		F0AD1E4F1BF09C3700D30849 /* ECSNotificationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = F0AD1E461BF09C3700D30849 /* ECSNotificationCenter.m */; };
+		F0AD1E501BF09C3700D30849 /* ECSNotifications.m in Sources */ = {isa = PBXBuildFile; fileRef = F0AD1E481BF09C3700D30849 /* ECSNotifications.m */; };
+		F0AD1E511BF09C3700D30849 /* SubNotifyResult.m in Sources */ = {isa = PBXBuildFile; fileRef = F0AD1E4B1BF09C3700D30849 /* SubNotifyResult.m */; };
+		F0AD1E591BF09C3D00D30849 /* ECSUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = F0AD1E541BF09C3D00D30849 /* ECSUtils.m */; };
+		F0AD1E5A1BF09C3D00D30849 /* Log.m in Sources */ = {isa = PBXBuildFile; fileRef = F0AD1E561BF09C3D00D30849 /* Log.m */; };
+		F0AD1E5B1BF09C3D00D30849 /* VTMCommonUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F0AD1E581BF09C3D00D30849 /* VTMCommonUtil.m */; };
+		F0EE13CB1BF19964004337B0 /* SvnSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0EE13CA1BF19964004337B0 /* SvnSdk.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F0AD1CB01BE855E900D30849 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				F0AD1CB61BE855E900D30849 /* eSpaceCCSDK.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		67143B521DD31E1F0028B803 /* openssl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = openssl.framework; sourceTree = "<group>"; };
+		67143B541DD31E1F0028B803 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		67143B551DD31E1F0028B803 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		F01CD3D61C3E3829000A9478 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcrypto.a; sourceTree = "<group>"; };
+		F01CD3D71C3E3829000A9478 /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcurl.a; sourceTree = "<group>"; };
+		F01CD3D81C3E3829000A9478 /* libjsoncpp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libjsoncpp.a; sourceTree = "<group>"; };
+		F01CD3D91C3E3829000A9478 /* libsecurec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libsecurec.a; sourceTree = "<group>"; };
+		F01CD3DA1C3E3829000A9478 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libssl.a; sourceTree = "<group>"; };
+		F03051C41BF4767F00922562 /* VTMCommonDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTMCommonDefine.h; sourceTree = "<group>"; };
+		F03051C51BF4767F00922562 /* VTMNotificationsDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTMNotificationsDefine.h; sourceTree = "<group>"; };
+		F08423F31C05899E008793E6 /* SIPDiaglogInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIPDiaglogInfo.h; sourceTree = "<group>"; };
+		F08423F41C05899E008793E6 /* SIPDiaglogInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIPDiaglogInfo.m; sourceTree = "<group>"; };
+		F0AD1CB21BE855E900D30849 /* libeSpaceCCSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libeSpaceCCSDK.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0AD1CB51BE855E900D30849 /* eSpaceCCSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = eSpaceCCSDK.h; sourceTree = "<group>"; };
+		F0AD1CB71BE855E900D30849 /* eSpaceCCSDK.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = eSpaceCCSDK.m; sourceTree = "<group>"; };
+		F0AD1DD81BF0429C00D30849 /* eSDKIOSLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = eSDKIOSLog.h; sourceTree = "<group>"; };
+		F0AD1DD91BF0429C00D30849 /* eSDKLogAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = eSDKLogAPI.h; sourceTree = "<group>"; };
+		F0AD1DDA1BF0429C00D30849 /* eSDKLogDataType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = eSDKLogDataType.h; sourceTree = "<group>"; };
+		F0AD1DDB1BF0429C00D30849 /* libeSDKIOSLog.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libeSDKIOSLog.a; sourceTree = "<group>"; };
+		F0AD1DDE1BF0429C00D30849 /* call_advanced_def.h */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.c.h; path = call_advanced_def.h; sourceTree = "<group>"; };
+		F0AD1DDF1BF0429C00D30849 /* call_advanced_interface.h */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.c.h; path = call_advanced_interface.h; sourceTree = "<group>"; };
+		F0AD1DE01BF0429C00D30849 /* call_def.h */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.c.h; path = call_def.h; sourceTree = "<group>"; };
+		F0AD1DE11BF0429C00D30849 /* call_interface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = call_interface.h; sourceTree = "<group>"; };
+		F0AD1DE31BF0429C00D30849 /* securec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = securec.h; sourceTree = "<group>"; };
+		F0AD1DE41BF0429C00D30849 /* securectype.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = securectype.h; sourceTree = "<group>"; };
+		F0AD1DE51BF0429C00D30849 /* tup_def.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tup_def.h; sourceTree = "<group>"; };
+		F0AD1DE81BF0429C00D30849 /* libhme-audio.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libhme-audio.a"; sourceTree = "<group>"; };
+		F0AD1DE91BF0429C00D30849 /* libHME-Video.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libHME-Video.a"; sourceTree = "<group>"; };
+		F0AD1DEB1BF0429C00D30849 /* libHW_MPT_IOS_AMR_LIB.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libHW_MPT_IOS_AMR_LIB.a; sourceTree = "<group>"; };
+		F0AD1DEC1BF0429C00D30849 /* libHW_MPT_IOS_AMRWB_LIB.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libHW_MPT_IOS_AMRWB_LIB.a; sourceTree = "<group>"; };
+		F0AD1DED1BF0429C00D30849 /* libHW_MPT_IOS_G722_LIB.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libHW_MPT_IOS_G722_LIB.a; sourceTree = "<group>"; };
+		F0AD1DEE1BF0429C00D30849 /* libHW_MPT_IOS_G729AB_LIB.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libHW_MPT_IOS_G729AB_LIB.a; sourceTree = "<group>"; };
+		F0AD1DEF1BF0429C00D30849 /* libHW_MPT_IOS_ILBC_LIB.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libHW_MPT_IOS_ILBC_LIB.a; sourceTree = "<group>"; };
+		F0AD1DF01BF0429C00D30849 /* libHW_MPT_IOS_OPUS_LIB.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libHW_MPT_IOS_OPUS_LIB.a; sourceTree = "<group>"; };
+		F0AD1DF11BF0429C00D30849 /* libipsi_crypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libipsi_crypto.a; sourceTree = "<group>"; };
+		F0AD1DF21BF0429C00D30849 /* libipsi_eap.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libipsi_eap.a; sourceTree = "<group>"; };
+		F0AD1DF31BF0429C00D30849 /* libipsi_osal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libipsi_osal.a; sourceTree = "<group>"; };
+		F0AD1DF41BF0429C00D30849 /* libipsi_pse.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libipsi_pse.a; sourceTree = "<group>"; };
+		F0AD1DF51BF0429C00D30849 /* libipsi_ssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libipsi_ssl.a; sourceTree = "<group>"; };
+		F0AD1DF61BF0429C00D30849 /* libsipstacktup.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libsipstacktup.a; sourceTree = "<group>"; };
+		F0AD1DF71BF0429C00D30849 /* libsrtp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libsrtp.a; sourceTree = "<group>"; };
+		F0AD1DF81BF0429C00D30849 /* libtup_commonlib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libtup_commonlib.a; sourceTree = "<group>"; };
+		F0AD1DF91BF0429C00D30849 /* libtup_dns.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libtup_dns.a; sourceTree = "<group>"; };
+		F0AD1DFA1BF0429C00D30849 /* libtup_httpofflinefile.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libtup_httpofflinefile.a; sourceTree = "<group>"; };
+		F0AD1DFB1BF0429C00D30849 /* libtup_httptrans.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libtup_httptrans.a; sourceTree = "<group>"; };
+		F0AD1DFC1BF0429C00D30849 /* libtup_logone.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libtup_logone.a; sourceTree = "<group>"; };
+		F0AD1DFD1BF0429C00D30849 /* libtup_msg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libtup_msg.a; sourceTree = "<group>"; };
+		F0AD1DFE1BF0429C00D30849 /* libtup_os_adapter.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libtup_os_adapter.a; sourceTree = "<group>"; };
+		F0AD1DFF1BF0429C00D30849 /* libtup_publiclib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libtup_publiclib.a; sourceTree = "<group>"; };
+		F0AD1E011BF0429C00D30849 /* libtup_xml.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libtup_xml.a; sourceTree = "<group>"; };
+		F0AD1E021BF0429C00D30849 /* libtupcallservice.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libtupcallservice.a; sourceTree = "<group>"; };
+		F0AD1E031BF0429C00D30849 /* libtupmediahme.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libtupmediahme.a; sourceTree = "<group>"; };
+		F0AD1E041BF0429C00D30849 /* libtupmediaservice.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libtupmediaservice.a; sourceTree = "<group>"; };
+		F0AD1E051BF0429C00D30849 /* libtupsdp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libtupsdp.a; sourceTree = "<group>"; };
+		F0AD1E061BF0429C00D30849 /* libtupsdpnegotiation.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libtupsdpnegotiation.a; sourceTree = "<group>"; };
+		F0AD1E071BF0429C00D30849 /* libtupsipc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libtupsipc.a; sourceTree = "<group>"; };
+		F0AD1E081BF0429C00D30849 /* libvcom.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libvcom.a; sourceTree = "<group>"; };
+		F0AD1E321BF09C3000D30849 /* AnonymousCall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnonymousCall.h; sourceTree = "<group>"; };
+		F0AD1E331BF09C3000D30849 /* AnonymousCall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnonymousCall.m; sourceTree = "<group>"; };
+		F0AD1E341BF09C3000D30849 /* CallServiceImp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallServiceImp.h; sourceTree = "<group>"; };
+		F0AD1E351BF09C3000D30849 /* CallServiceImp.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CallServiceImp.mm; sourceTree = "<group>"; };
+		F0AD1E361BF09C3000D30849 /* CallServiceManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallServiceManger.h; sourceTree = "<group>"; };
+		F0AD1E371BF09C3000D30849 /* CallServiceManger.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CallServiceManger.mm; sourceTree = "<group>"; };
+		F0AD1E381BF09C3000D30849 /* ECSCallService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECSCallService.h; sourceTree = "<group>"; };
+		F0AD1E391BF09C3000D30849 /* ECSCallService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECSCallService.m; sourceTree = "<group>"; };
+		F0AD1E3A1BF09C3000D30849 /* TupCallNotifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TupCallNotifications.h; sourceTree = "<group>"; };
+		F0AD1E3B1BF09C3000D30849 /* TupCallNotifications.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TupCallNotifications.mm; sourceTree = "<group>"; };
+		F0AD1E421BF09C3700D30849 /* AccountInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountInfo.h; sourceTree = "<group>"; };
+		F0AD1E431BF09C3700D30849 /* AccountInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountInfo.m; sourceTree = "<group>"; };
+		F0AD1E441BF09C3700D30849 /* ECSDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECSDefines.h; sourceTree = "<group>"; };
+		F0AD1E451BF09C3700D30849 /* ECSNotificationCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECSNotificationCenter.h; sourceTree = "<group>"; };
+		F0AD1E461BF09C3700D30849 /* ECSNotificationCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECSNotificationCenter.m; sourceTree = "<group>"; };
+		F0AD1E471BF09C3700D30849 /* ECSNotifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECSNotifications.h; sourceTree = "<group>"; };
+		F0AD1E481BF09C3700D30849 /* ECSNotifications.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECSNotifications.m; sourceTree = "<group>"; };
+		F0AD1E491BF09C3700D30849 /* SecurityMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecurityMacros.h; sourceTree = "<group>"; };
+		F0AD1E4A1BF09C3700D30849 /* SubNotifyResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubNotifyResult.h; sourceTree = "<group>"; };
+		F0AD1E4B1BF09C3700D30849 /* SubNotifyResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubNotifyResult.m; sourceTree = "<group>"; };
+		F0AD1E531BF09C3D00D30849 /* ECSUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECSUtils.h; sourceTree = "<group>"; };
+		F0AD1E541BF09C3D00D30849 /* ECSUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECSUtils.m; sourceTree = "<group>"; };
+		F0AD1E551BF09C3D00D30849 /* Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Log.h; sourceTree = "<group>"; };
+		F0AD1E561BF09C3D00D30849 /* Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Log.m; sourceTree = "<group>"; };
+		F0AD1E571BF09C3D00D30849 /* VTMCommonUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTMCommonUtil.h; sourceTree = "<group>"; };
+		F0AD1E581BF09C3D00D30849 /* VTMCommonUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTMCommonUtil.m; sourceTree = "<group>"; };
+		F0E7040C1C31090800B648DF /* eSDKClientLogCfg.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = eSDKClientLogCfg.plist; sourceTree = "<group>"; };
+		F0EE13CA1BF19964004337B0 /* SvnSdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SvnSdk.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F0AD1CAF1BE855E900D30849 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0AD1E251BF0429D00D30849 /* libtupmediahme.a in Frameworks */,
+				F0AD1E0D1BF0429D00D30849 /* libHW_MPT_IOS_AMR_LIB.a in Frameworks */,
+				F0AD1E181BF0429D00D30849 /* libsipstacktup.a in Frameworks */,
+				F0AD1E141BF0429D00D30849 /* libipsi_eap.a in Frameworks */,
+				F01CD3DE1C3E3829000A9478 /* libsecurec.a in Frameworks */,
+				F0AD1E231BF0429D00D30849 /* libtup_xml.a in Frameworks */,
+				F01CD3DB1C3E3829000A9478 /* libcrypto.a in Frameworks */,
+				F0AD1E201BF0429D00D30849 /* libtup_os_adapter.a in Frameworks */,
+				F0AD1E1A1BF0429D00D30849 /* libtup_commonlib.a in Frameworks */,
+				F0AD1E101BF0429D00D30849 /* libHW_MPT_IOS_G729AB_LIB.a in Frameworks */,
+				F01CD3DF1C3E3829000A9478 /* libssl.a in Frameworks */,
+				F0AD1E171BF0429D00D30849 /* libipsi_ssl.a in Frameworks */,
+				67143B561DD31E1F0028B803 /* openssl.framework in Frameworks */,
+				F0AD1E1D1BF0429D00D30849 /* libtup_httptrans.a in Frameworks */,
+				F0AD1E211BF0429D00D30849 /* libtup_publiclib.a in Frameworks */,
+				F0AD1E0E1BF0429D00D30849 /* libHW_MPT_IOS_AMRWB_LIB.a in Frameworks */,
+				F0AD1E091BF0429D00D30849 /* libeSDKIOSLog.a in Frameworks */,
+				F0AD1E2A1BF0429D00D30849 /* libvcom.a in Frameworks */,
+				F0AD1E1C1BF0429D00D30849 /* libtup_httpofflinefile.a in Frameworks */,
+				F0AD1E1B1BF0429D00D30849 /* libtup_dns.a in Frameworks */,
+				F0AD1E191BF0429D00D30849 /* libsrtp.a in Frameworks */,
+				F0AD1E1E1BF0429D00D30849 /* libtup_logone.a in Frameworks */,
+				F0AD1E131BF0429D00D30849 /* libipsi_crypto.a in Frameworks */,
+				F0AD1E121BF0429D00D30849 /* libHW_MPT_IOS_OPUS_LIB.a in Frameworks */,
+				F0AD1E151BF0429D00D30849 /* libipsi_osal.a in Frameworks */,
+				F0AD1E1F1BF0429D00D30849 /* libtup_msg.a in Frameworks */,
+				F0AD1E271BF0429D00D30849 /* libtupsdp.a in Frameworks */,
+				F0AD1E0B1BF0429D00D30849 /* libHME-Video.a in Frameworks */,
+				F0AD1E111BF0429D00D30849 /* libHW_MPT_IOS_ILBC_LIB.a in Frameworks */,
+				F0AD1E261BF0429D00D30849 /* libtupmediaservice.a in Frameworks */,
+				F0AD1E241BF0429D00D30849 /* libtupcallservice.a in Frameworks */,
+				F01CD3DC1C3E3829000A9478 /* libcurl.a in Frameworks */,
+				F0AD1E0A1BF0429D00D30849 /* libhme-audio.a in Frameworks */,
+				F0AD1E0F1BF0429D00D30849 /* libHW_MPT_IOS_G722_LIB.a in Frameworks */,
+				F01CD3DD1C3E3829000A9478 /* libjsoncpp.a in Frameworks */,
+				F0AD1E281BF0429D00D30849 /* libtupsdpnegotiation.a in Frameworks */,
+				F0AD1E291BF0429D00D30849 /* libtupsipc.a in Frameworks */,
+				F0EE13CB1BF19964004337B0 /* SvnSdk.framework in Frameworks */,
+				F0AD1E161BF0429D00D30849 /* libipsi_pse.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		67143B511DD31E1F0028B803 /* openssl */ = {
+			isa = PBXGroup;
+			children = (
+				67143B521DD31E1F0028B803 /* openssl.framework */,
+			);
+			name = openssl;
+			path = "../../../../third-party/openssl";
+			sourceTree = "<group>";
+		};
+		67143B531DD31E1F0028B803 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				67143B541DD31E1F0028B803 /* Reachability.h */,
+				67143B551DD31E1F0028B803 /* Reachability.m */,
+			);
+			name = Reachability;
+			path = "../../../../third-party/Reachability";
+			sourceTree = "<group>";
+		};
+		F0AD1CA91BE855E900D30849 = {
+			isa = PBXGroup;
+			children = (
+				F0AD1CBE1BE8568800D30849 /* Depend */,
+				F0AD1CB41BE855E900D30849 /* eSpaceCCSDK */,
+				F0AD1CB31BE855E900D30849 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F0AD1CB31BE855E900D30849 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F0AD1CB21BE855E900D30849 /* libeSpaceCCSDK.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F0AD1CB41BE855E900D30849 /* eSpaceCCSDK */ = {
+			isa = PBXGroup;
+			children = (
+				F0E7040C1C31090800B648DF /* eSDKClientLogCfg.plist */,
+				F0AD1E521BF09C3D00D30849 /* util */,
+				F0AD1E411BF09C3700D30849 /* common */,
+				F0AD1E311BF09C3000D30849 /* Call */,
+				F0AD1CB51BE855E900D30849 /* eSpaceCCSDK.h */,
+				F0AD1CB71BE855E900D30849 /* eSpaceCCSDK.m */,
+				F03051C41BF4767F00922562 /* VTMCommonDefine.h */,
+				F03051C51BF4767F00922562 /* VTMNotificationsDefine.h */,
+			);
+			path = eSpaceCCSDK;
+			sourceTree = "<group>";
+		};
+		F0AD1CBE1BE8568800D30849 /* Depend */ = {
+			isa = PBXGroup;
+			children = (
+				F0AD1E2B1BF042A400D30849 /* Public */,
+				F0AD1DD51BF0429C00D30849 /* Private */,
+			);
+			path = Depend;
+			sourceTree = "<group>";
+		};
+		F0AD1DD51BF0429C00D30849 /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				F0EE13C91BF19964004337B0 /* AnyOffice */,
+				F0AD1DD61BF0429C00D30849 /* eSDKLog */,
+				F0AD1DDC1BF0429C00D30849 /* eSpaceMobile */,
+			);
+			path = Private;
+			sourceTree = "<group>";
+		};
+		F0AD1DD61BF0429C00D30849 /* eSDKLog */ = {
+			isa = PBXGroup;
+			children = (
+				F0AD1DD71BF0429C00D30849 /* include */,
+				F0AD1DDB1BF0429C00D30849 /* libeSDKIOSLog.a */,
+			);
+			path = eSDKLog;
+			sourceTree = "<group>";
+		};
+		F0AD1DD71BF0429C00D30849 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				F0AD1DD81BF0429C00D30849 /* eSDKIOSLog.h */,
+				F0AD1DD91BF0429C00D30849 /* eSDKLogAPI.h */,
+				F0AD1DDA1BF0429C00D30849 /* eSDKLogDataType.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		F0AD1DDC1BF0429C00D30849 /* eSpaceMobile */ = {
+			isa = PBXGroup;
+			children = (
+				F0AD1DDD1BF0429C00D30849 /* inc */,
+				F0AD1DE61BF0429C00D30849 /* lib */,
+			);
+			path = eSpaceMobile;
+			sourceTree = "<group>";
+		};
+		F0AD1DDD1BF0429C00D30849 /* inc */ = {
+			isa = PBXGroup;
+			children = (
+				F0AD1DDE1BF0429C00D30849 /* call_advanced_def.h */,
+				F0AD1DDF1BF0429C00D30849 /* call_advanced_interface.h */,
+				F0AD1DE01BF0429C00D30849 /* call_def.h */,
+				F0AD1DE11BF0429C00D30849 /* call_interface.h */,
+				F0AD1DE31BF0429C00D30849 /* securec.h */,
+				F0AD1DE41BF0429C00D30849 /* securectype.h */,
+				F0AD1DE51BF0429C00D30849 /* tup_def.h */,
+			);
+			path = inc;
+			sourceTree = "<group>";
+		};
+		F0AD1DE61BF0429C00D30849 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				F0AD1DE71BF0429C00D30849 /* device */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		F0AD1DE71BF0429C00D30849 /* device */ = {
+			isa = PBXGroup;
+			children = (
+				F01CD3D61C3E3829000A9478 /* libcrypto.a */,
+				F01CD3D71C3E3829000A9478 /* libcurl.a */,
+				F01CD3D81C3E3829000A9478 /* libjsoncpp.a */,
+				F01CD3D91C3E3829000A9478 /* libsecurec.a */,
+				F01CD3DA1C3E3829000A9478 /* libssl.a */,
+				F0AD1DE81BF0429C00D30849 /* libhme-audio.a */,
+				F0AD1DE91BF0429C00D30849 /* libHME-Video.a */,
+				F0AD1DEB1BF0429C00D30849 /* libHW_MPT_IOS_AMR_LIB.a */,
+				F0AD1DEC1BF0429C00D30849 /* libHW_MPT_IOS_AMRWB_LIB.a */,
+				F0AD1DED1BF0429C00D30849 /* libHW_MPT_IOS_G722_LIB.a */,
+				F0AD1DEE1BF0429C00D30849 /* libHW_MPT_IOS_G729AB_LIB.a */,
+				F0AD1DEF1BF0429C00D30849 /* libHW_MPT_IOS_ILBC_LIB.a */,
+				F0AD1DF01BF0429C00D30849 /* libHW_MPT_IOS_OPUS_LIB.a */,
+				F0AD1DF11BF0429C00D30849 /* libipsi_crypto.a */,
+				F0AD1DF21BF0429C00D30849 /* libipsi_eap.a */,
+				F0AD1DF31BF0429C00D30849 /* libipsi_osal.a */,
+				F0AD1DF41BF0429C00D30849 /* libipsi_pse.a */,
+				F0AD1DF51BF0429C00D30849 /* libipsi_ssl.a */,
+				F0AD1DF61BF0429C00D30849 /* libsipstacktup.a */,
+				F0AD1DF71BF0429C00D30849 /* libsrtp.a */,
+				F0AD1DF81BF0429C00D30849 /* libtup_commonlib.a */,
+				F0AD1DF91BF0429C00D30849 /* libtup_dns.a */,
+				F0AD1DFA1BF0429C00D30849 /* libtup_httpofflinefile.a */,
+				F0AD1DFB1BF0429C00D30849 /* libtup_httptrans.a */,
+				F0AD1DFC1BF0429C00D30849 /* libtup_logone.a */,
+				F0AD1DFD1BF0429C00D30849 /* libtup_msg.a */,
+				F0AD1DFE1BF0429C00D30849 /* libtup_os_adapter.a */,
+				F0AD1DFF1BF0429C00D30849 /* libtup_publiclib.a */,
+				F0AD1E011BF0429C00D30849 /* libtup_xml.a */,
+				F0AD1E021BF0429C00D30849 /* libtupcallservice.a */,
+				F0AD1E031BF0429C00D30849 /* libtupmediahme.a */,
+				F0AD1E041BF0429C00D30849 /* libtupmediaservice.a */,
+				F0AD1E051BF0429C00D30849 /* libtupsdp.a */,
+				F0AD1E061BF0429C00D30849 /* libtupsdpnegotiation.a */,
+				F0AD1E071BF0429C00D30849 /* libtupsipc.a */,
+				F0AD1E081BF0429C00D30849 /* libvcom.a */,
+			);
+			path = device;
+			sourceTree = "<group>";
+		};
+		F0AD1E2B1BF042A400D30849 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				67143B511DD31E1F0028B803 /* openssl */,
+				67143B531DD31E1F0028B803 /* Reachability */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		F0AD1E311BF09C3000D30849 /* Call */ = {
+			isa = PBXGroup;
+			children = (
+				F0AD1E321BF09C3000D30849 /* AnonymousCall.h */,
+				F0AD1E331BF09C3000D30849 /* AnonymousCall.m */,
+				F0AD1E341BF09C3000D30849 /* CallServiceImp.h */,
+				F0AD1E351BF09C3000D30849 /* CallServiceImp.mm */,
+				F0AD1E361BF09C3000D30849 /* CallServiceManger.h */,
+				F0AD1E371BF09C3000D30849 /* CallServiceManger.mm */,
+				F0AD1E381BF09C3000D30849 /* ECSCallService.h */,
+				F0AD1E391BF09C3000D30849 /* ECSCallService.m */,
+				F0AD1E3A1BF09C3000D30849 /* TupCallNotifications.h */,
+				F0AD1E3B1BF09C3000D30849 /* TupCallNotifications.mm */,
+				F08423F31C05899E008793E6 /* SIPDiaglogInfo.h */,
+				F08423F41C05899E008793E6 /* SIPDiaglogInfo.m */,
+			);
+			path = Call;
+			sourceTree = "<group>";
+		};
+		F0AD1E411BF09C3700D30849 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				F0AD1E421BF09C3700D30849 /* AccountInfo.h */,
+				F0AD1E431BF09C3700D30849 /* AccountInfo.m */,
+				F0AD1E441BF09C3700D30849 /* ECSDefines.h */,
+				F0AD1E451BF09C3700D30849 /* ECSNotificationCenter.h */,
+				F0AD1E461BF09C3700D30849 /* ECSNotificationCenter.m */,
+				F0AD1E471BF09C3700D30849 /* ECSNotifications.h */,
+				F0AD1E481BF09C3700D30849 /* ECSNotifications.m */,
+				F0AD1E491BF09C3700D30849 /* SecurityMacros.h */,
+				F0AD1E4A1BF09C3700D30849 /* SubNotifyResult.h */,
+				F0AD1E4B1BF09C3700D30849 /* SubNotifyResult.m */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		F0AD1E521BF09C3D00D30849 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				F0AD1E531BF09C3D00D30849 /* ECSUtils.h */,
+				F0AD1E541BF09C3D00D30849 /* ECSUtils.m */,
+				F0AD1E551BF09C3D00D30849 /* Log.h */,
+				F0AD1E561BF09C3D00D30849 /* Log.m */,
+				F0AD1E571BF09C3D00D30849 /* VTMCommonUtil.h */,
+				F0AD1E581BF09C3D00D30849 /* VTMCommonUtil.m */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		F0EE13C91BF19964004337B0 /* AnyOffice */ = {
+			isa = PBXGroup;
+			children = (
+				F0EE13CA1BF19964004337B0 /* SvnSdk.framework */,
+			);
+			path = AnyOffice;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F0AD1CB11BE855E900D30849 /* eSpaceCCSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0AD1CBB1BE855E900D30849 /* Build configuration list for PBXNativeTarget "eSpaceCCSDK" */;
+			buildPhases = (
+				F0AD1CAE1BE855E900D30849 /* Sources */,
+				F0AD1CAF1BE855E900D30849 /* Frameworks */,
+				F0AD1CB01BE855E900D30849 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = eSpaceCCSDK;
+			productName = eSpaceCCSDK;
+			productReference = F0AD1CB21BE855E900D30849 /* libeSpaceCCSDK.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F0AD1CAA1BE855E900D30849 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = gaoshuming;
+				TargetAttributes = {
+					F0AD1CB11BE855E900D30849 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+				};
+			};
+			buildConfigurationList = F0AD1CAD1BE855E900D30849 /* Build configuration list for PBXProject "eSpaceCCSDK" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F0AD1CA91BE855E900D30849;
+			productRefGroup = F0AD1CB31BE855E900D30849 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F0AD1CB11BE855E900D30849 /* eSpaceCCSDK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F0AD1CAE1BE855E900D30849 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F08423F51C05899E008793E6 /* SIPDiaglogInfo.m in Sources */,
+				F0AD1E401BF09C3000D30849 /* TupCallNotifications.mm in Sources */,
+				F0AD1CB81BE855E900D30849 /* eSpaceCCSDK.m in Sources */,
+				F0AD1E511BF09C3700D30849 /* SubNotifyResult.m in Sources */,
+				67143B571DD31E1F0028B803 /* Reachability.m in Sources */,
+				F0AD1E3F1BF09C3000D30849 /* ECSCallService.m in Sources */,
+				F0AD1E4E1BF09C3700D30849 /* AccountInfo.m in Sources */,
+				F0AD1E5B1BF09C3D00D30849 /* VTMCommonUtil.m in Sources */,
+				F0AD1E3C1BF09C3000D30849 /* AnonymousCall.m in Sources */,
+				F0AD1E5A1BF09C3D00D30849 /* Log.m in Sources */,
+				F0AD1E591BF09C3D00D30849 /* ECSUtils.m in Sources */,
+				F0AD1E501BF09C3700D30849 /* ECSNotifications.m in Sources */,
+				F0AD1E4F1BF09C3700D30849 /* ECSNotificationCenter.m in Sources */,
+				F0AD1E3D1BF09C3000D30849 /* CallServiceImp.mm in Sources */,
+				F0AD1E3E1BF09C3000D30849 /* CallServiceManger.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F0AD1CB91BE855E900D30849 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "armv7 arm64";
+			};
+			name = Debug;
+		};
+		F0AD1CBA1BE855E900D30849 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv7 arm64";
+			};
+			name = Release;
+		};
+		F0AD1CBC1BE855E900D30849 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Depend/openssl",
+					"$(PROJECT_DIR)/Depend/Public/openssl",
+					"$(PROJECT_DIR)/Depend/Private/AnyOffice",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Depend/Private/eSDKLog",
+					"$(PROJECT_DIR)/Depend/Private/eSpaceMobile/lib/device",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "armv7 arm64";
+			};
+			name = Debug;
+		};
+		F0AD1CBD1BE855E900D30849 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Depend/openssl",
+					"$(PROJECT_DIR)/Depend/Public/openssl",
+					"$(PROJECT_DIR)/Depend/Private/AnyOffice",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Depend/Private/eSDKLog",
+					"$(PROJECT_DIR)/Depend/Private/eSpaceMobile/lib/device",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "armv7 arm64";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F0AD1CAD1BE855E900D30849 /* Build configuration list for PBXProject "eSpaceCCSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0AD1CB91BE855E900D30849 /* Debug */,
+				F0AD1CBA1BE855E900D30849 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0AD1CBB1BE855E900D30849 /* Build configuration list for PBXNativeTarget "eSpaceCCSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0AD1CBC1BE855E900D30849 /* Debug */,
+				F0AD1CBD1BE855E900D30849 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F0AD1CAA1BE855E900D30849 /* Project object */;
+}
